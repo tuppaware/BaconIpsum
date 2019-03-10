@@ -1,0 +1,16 @@
+PODS:
+  - BaconIpsum (0.1.0)
+
+DEPENDENCIES:
+  - BaconIpsum (from `../`)
+
+EXTERNAL SOURCES:
+  BaconIpsum:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  BaconIpsum: 2370186f7d5133b6c574193c2760418556150a5a
+
+PODFILE CHECKSUM: 10826cb3322b22eb45545539772db99c6637db7f
+
+COCOAPODS: 1.5.3

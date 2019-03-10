@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BaconIpsum'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of BaconIpsum.'
+  s.version          = '1.0.0'
+  s.summary          = 'Fill your app and life with Pork! This library generates pork related text for use as placeholder text.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,17 +18,17 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+A Swift library to create awesome pork flavoured placeholder text in your IOS apps
                        DESC
 
-  s.homepage         = 'https://github.com/Adam Ware/BaconIpsum'
+  s.homepage         = 'https://github.com/tuppaware/baconipsum'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Adam Ware' => 'tuppaware@gmail.com' }
-  s.source           = { :git => 'https://github.com/Adam Ware/BaconIpsum.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/tuppaware/baconipsum', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
 
   s.source_files = 'BaconIpsum/Classes/**/*'
   
