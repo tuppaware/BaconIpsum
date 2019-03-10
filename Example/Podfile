@@ -1,0 +1,6 @@
+use_frameworks!
+target 'BaconIpsum_Tests' do
+  pod 'BaconIpsum', :path => '../'
+  
+  
+end
