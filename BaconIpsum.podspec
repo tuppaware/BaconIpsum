@@ -18,18 +18,18 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-A Swift library to create awesome pork flavoured placeholder text in your IOS apps
+A Swift library to create awesome pork flavoured placeholder text in your IOS apps. Fill your app and life with Pork! This library generates pork related text for use as placeholder text.
                        DESC
 
   s.homepage         = 'https://github.com/tuppaware/baconipsum'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Adam Ware' => 'tuppaware@gmail.com' }
-  s.source           = { :git => 'https://github.com/tuppaware/baconipsum', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/tuppaware/BaconIpsum.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
-
+  s.swift_version = '4.2'
   s.source_files = 'BaconIpsum/Classes/**/*'
   
   # s.resource_bundles = {
