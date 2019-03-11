@@ -1,14 +1,13 @@
 
 # 🥓  BaconIpsum for Swift 🥓 
 
-[![CI Status](https://img.shields.io/travis/tuppaware/BaconIpsum.svg?style=flat)](https://travis-ci.org/tuppaware/BaconIpsum)
 [![Version](https://img.shields.io/cocoapods/v/BaconIpsum.svg?style=flat)](https://cocoapods.org/pods/BaconIpsum)
 [![License](https://img.shields.io/cocoapods/l/BaconIpsum.svg?style=flat)](https://cocoapods.org/pods/BaconIpsum)
 [![Platform](https://img.shields.io/cocoapods/p/BaconIpsum.svg?style=flat)](https://cocoapods.org/pods/BaconIpsum)
 
 ## Introduction 
 
-A Swift library to create awesome pork flavoured Lorium Ipsum placeholder text in your IOS apps. Fill your app and life with Pork! This library generates pork related text for use as placeholder text.
+A Swift library to create awesome pork flavoured Lorem Ipsum placeholder text in your IOS apps. Fill your app and life with Pork! This library generates pork related text for use as placeholder text.
 
 
 ## Installation
