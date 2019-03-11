@@ -1,3 +1,4 @@
+
 # 🥓  BaconIpsum for Swift 🥓 
 
 [![CI Status](https://img.shields.io/travis/tuppaware/BaconIpsum.svg?style=flat)](https://travis-ci.org/tuppaware/BaconIpsum)
@@ -19,7 +20,7 @@ it, simply add the following line to your Podfile:
 pod 'BaconIpsum'
 ```
 Dont forget to Import it into your project (when using the pod). 
-```
+```swift
 Import BaconIpsum
 ```
 
@@ -28,24 +29,24 @@ Or manually drop the BaconIpsum.swift file into your project.
 ## Getting that porky goodness 
 
 This will simply return a single pork related word. 
-```
+```swift
 let myText = BaconIpsum.giveMeBacon()
 // returns a string
 ```
 
 Want a number of 🐷 words ? 
-```
+```swift
 let myText = BaconIpsum.giveMeBacon(withWords: 4)
 
 ```
 
 Want a full sentence ? 
-```
+```swift
 let myText = BaconIpsum.giveMeBacon(withSentences: 2)
 
 ```
 Maybe the whole hog 🐖 is what you are after ?
-```
+```swift
 let myText = BaconIpsum.giveMeBacon(withParagraphs: 4)
 
 ```
