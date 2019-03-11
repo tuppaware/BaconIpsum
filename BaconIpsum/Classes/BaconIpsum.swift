@@ -6,7 +6,6 @@
 //  Copyright © 2019 Adam Ware.
 //
 
-import UIKit
 
 public struct BaconIpsum {
     
