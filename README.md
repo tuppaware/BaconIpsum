@@ -21,7 +21,7 @@ pod 'BaconIpsum'
 ```
 Dont forget to Import it into your project (when using the pod). 
 ```swift
-Import BaconIpsum
+import BaconIpsum
 ```
 
 Or manually drop the BaconIpsum.swift file into your project. 
