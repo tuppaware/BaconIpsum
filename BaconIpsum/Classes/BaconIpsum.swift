@@ -72,17 +72,150 @@ public struct BaconIpsum {
                                    "landjaeger",
                                    "porchetta"]
     
+    public static let baseVeg = [
+                                "acorn squash",
+                                "alfalfa sprout",
+                                "amaranth",
+                                "anise",
+                                "artichoke",
+                                "arugula",
+                                "asparagus",
+                                "aubergine",
+                                "azuki bean",
+                                "banana squash",
+                                "basil",
+                                "bean sprout",
+                                "beet",
+                                "black bean",
+                                "black-eyed pea",
+                                "bok choy",
+                                "borlotti bean",
+                                "broad beans",
+                                "broccoflower",
+                                "broccoli",
+                                "brussels sprout",
+                                "butternut squash",
+                                "cabbage",
+                                "calabrese",
+                                "caraway",
+                                "carrot",
+                                "cauliflower",
+                                "cayenne pepper",
+                                "celeriac",
+                                "celery",
+                                "chamomile",
+                                "chard",
+                                "chayote",
+                                "chickpea",
+                                "chives",
+                                "cilantro",
+                                "collard green",
+                                "corn",
+                                "corn salad",
+                                "courgette",
+                                "cucumber",
+                                "daikon",
+                                "delicata",
+                                "dill",
+                                "eggplant",
+                                "endive",
+                                "fennel",
+                                "fiddlehead",
+                                "frisee",
+                                "garlic",
+                                "gem squash",
+                                "ginger",
+                                "green bean",
+                                "green pepper",
+                                "habanero",
+                                "herbs and spice",
+                                "horseradish",
+                                "hubbard squash",
+                                "jalapeno",
+                                "jerusalem artichoke",
+                                "jicama",
+                                "kale",
+                                "kidney bean",
+                                "kohlrabi",
+                                "lavender",
+                                "leek ",
+                                "legume",
+                                "lemon grass",
+                                "lentils",
+                                "lettuce",
+                                "lima bean",
+                                "mamey",
+                                "mangetout",
+                                "marjoram",
+                                "mung bean",
+                                "mushroom",
+                                "mustard green",
+                                "navy bean",
+                                "new zealand spinach",
+                                "nopale",
+                                "okra",
+                                "onion",
+                                "oregano",
+                                "paprika",
+                                "parsley",
+                                "parsnip",
+                                "patty pan",
+                                "pea",
+                                "pinto bean",
+                                "potato",
+                                "pumpkin",
+                                "radicchio",
+                                "radish",
+                                "rhubarb",
+                                "rosemary",
+                                "runner bean",
+                                "rutabaga",
+                                "sage",
+                                "scallion",
+                                "shallot",
+                                "skirret",
+                                "snap pea",
+                                "soy bean",
+                                "spaghetti squash",
+                                "spinach",
+                                "squash ",
+                                "sweet potato",
+                                "tabasco pepper",
+                                "taro",
+                                "tat soi",
+                                "thyme",
+                                "topinambur",
+                                "tubers",
+                                "turnip",
+                                "wasabi",
+                                "water chestnut",
+                                "watercress",
+                                "white radish",
+                                "yam",
+                                "zucchini"
+                            ]
     
-    public static func giveMeBacon(withSentences: Int? = nil, withWords: Int? = nil, withParagraphs: Int? = nil )->String {
+    
+    /// Returns Bacon or Veg goodness for your placeholder needs
+    ///
+    /// - Parameters:
+    ///   - withSentences: How many sentences you'd like ?
+    ///   - withWords: How many Word you'd like ?
+    ///   - withParagraphs: How many full paragraphs you'd like ?
+    ///   - vegetarian: Replace bacon with vegetables for Healthier placeholders.
+    /// - Returns: String of placeholder text
+    
+    public static func giveMeBacon(withSentences: Int? = nil, withWords: Int? = nil, withParagraphs: Int? = nil, vegetarian: Bool? = false )->String {
        var returnBaconString = ""
+        let baseFood = vegetarian! ? baseVeg : baseMeats
         if let withParagraphs = withParagraphs {
             for _ in 1...withParagraphs {
-                returnBaconString += makeAParagraph(words: baseMeats)
+                returnBaconString += makeAParagraph(words: baseFood)
             }
             return returnBaconString
         } else if let withWords = withWords {
             for end in 1...withWords {
-                returnBaconString += baseMeats[Int.random(in: 0...baseMeats.count-1)]
+                returnBaconString += baseFood[Int.random(in: 0...baseFood.count-1)]
                 if (end != withWords) {
                     returnBaconString += " "
                 }
@@ -90,11 +223,11 @@ public struct BaconIpsum {
             return returnBaconString.capitalizingFirstLetter()
         } else if let withSentences = withSentences {
             for _ in 1...withSentences {
-                returnBaconString += "\(makeASentence(words: baseMeats)). "
+                returnBaconString += "\(makeASentence(words: baseFood)). "
             }
             return returnBaconString
         } else {
-            return baseMeats[Int.random(in: 0...baseMeats.count-1)].capitalizingFirstLetter()
+            return baseFood[Int.random(in: 0...baseFood.count-1)].capitalizingFirstLetter()
         }
     }
     

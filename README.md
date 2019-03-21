@@ -7,7 +7,8 @@
 
 ## Introduction 
 
-A Swift library to create awesome pork flavoured Lorem Ipsum placeholder text in your IOS apps. Fill your app and life with Pork! This library generates pork related text for use as placeholder text.
+A Swift library to create awesome pork flavoured Lorem Ipsum placeholder text in your IOS apps. Fill your app and life with Pork! This library generates pork related text for use as placeholder text. 
+Also now includes vegetarian option!
 
 
 ## Installation
@@ -32,6 +33,11 @@ This will simply return a single pork related word.
 let myText = BaconIpsum.giveMeBacon()
 // returns a string
 ```
+Add a switch for vegetarian option!
+```swift
+let myText = BaconIpsum.giveMeBacon(vegetarian: true) // defaults to false
+// returns a vegetarian string
+```
 
 Want a number of 🐷 words ? 
 ```swift
@@ -52,7 +58,7 @@ let myText = BaconIpsum.giveMeBacon(withParagraphs: 4)
 
 ## Contribute 
 
-Yaass, please do! Maybe someone can make a vegetarian version ?  
+Yaass, please do! 
 #nutmeatIpsum?
 
 ## Author
